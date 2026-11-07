@@ -2,383 +2,262 @@
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="color-scheme" content="light dark">
+    <meta name="theme-color" content="#f5f5f7" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
     <title>Waffle Champion - Menü</title>
-    <meta name="description" content="Waffle Champion menü: Tabak Waffle, Kova Waffle, Bardak Waffle ve içecekler. Güncel fiyatlarla QR menü.">
+    <meta name="description" content="Waffle Champion menüsü: Tabak Waffle, Kova Waffle, Bardak Waffle ve içecekler.">
 
-    <!-- Google Fonts: Inter for clean modern typography, Outfit for headings -->
+    <!-- Apple cihazlarda SF Pro kullanılır; diğer cihazlarda en yakın karşılığı Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Header / Hero Section -->
     <header class="hero">
-        <div class="hero-slideshow">
-            <div class="hero-slide" style="background-image: url('resimler/tabak-klasik.jpg');"></div>
-            <div class="hero-slide" style="background-image: url('resimler/kova-klasik.jpg');"></div>
-            <div class="hero-slide" style="background-image: url('resimler/tabak-double.jpg');"></div>
-            <div class="hero-slide" style="background-image: url('resimler/kova-frambuaz.jpg');"></div>
-        </div>
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <h1 class="brand-title" style="text-shadow: 0 0 20px rgba(255,255,255,0.3);">WAFFLE CHAMPION</h1>
-            <p class="brand-subtitle">Eşsiz Lezzet, Gerçek Şampiyon</p>
-        </div>
+        <p class="eyebrow">Menü</p>
+        <h1 class="hero-title">Waffle Champion</h1>
+        <p class="hero-subtitle">Eşsiz lezzet, gerçek şampiyon.</p>
+        <p class="pill">Tüm ürünlerde self servis</p>
+        <img class="hero-image" src="resimler/hero.webp" alt="Kova, Tabak ve Bardak Waffle" width="1198" height="846">
     </header>
 
-    <!-- Self servis bilgisi -->
-    <div class="service-banner">
-        <span class="service-label">Tüm ürünlerde</span>
-        <strong>SELF SERVİS</strong>
-    </div>
-
-    <!-- Navigation (Smooth Scroll) -->
-    <nav class="category-nav">
-        <ul>
-            <li><a href="#tabak-waffle">Tabak<span class="nav-suffix"> Waffle</span></a></li>
-            <li><a href="#kova-waffle">Kova<span class="nav-suffix"> Waffle</span></a></li>
-            <li><a href="#bardak-waffle">Bardak<span class="nav-suffix"> Waffle</span></a></li>
-            <li><a href="#icecekler">İçecekler</a></li>
-        </ul>
+    <nav class="local-nav" aria-label="Menü bölümleri">
+        <div class="segmented">
+            <a href="#tabak">Tabak</a>
+            <a href="#kova">Kova</a>
+            <a href="#bardak">Bardak</a>
+            <a href="#icecekler">İçecekler</a>
+        </div>
     </nav>
 
-    <!-- Main Content -->
-    <main class="menu-container">
+    <main>
 
-        <!-- SECTION: TABAK WAFFLE -->
-        <section id="tabak-waffle" class="menu-section">
-            <h2 class="section-title">Tabak Waffle</h2>
-            <p class="section-subtitle">Tabakta bütün, çıtır Belçika waffle</p>
-            <div class="section-divider"></div>
+        <!-- TABAK WAFFLE -->
+        <section id="tabak" class="menu-section">
+            <div class="section-head">
+                <h2>Tabak Waffle</h2>
+                <p>Bütün Belçika waffle, tabakta. Hepsi muz ve çilekle.</p>
+            </div>
 
-            <div class="menu-grid">
-
-                <article class="menu-card">
-                    <div class="card-image-wrapper">
-                        <img src="resimler/tabak-klasik.jpg" alt="Klasik Tabak Waffle" loading="lazy">
-                    </div>
-                    <div class="card-content">
-                        <div class="item-head">
-                            <h3 class="item-title">Klasik Tabak Waffle</h3>
-                            <span class="item-price">270 ₺</span>
-                        </div>
-                        <p class="item-desc">Çıtır Belçika waffle, muz, çilek, sütlü çikolata, beyaz çikolata, fındık ve fıstık ile servis edilir.</p>
+            <div class="product-grid">
+                <article class="product">
+                    <div class="product-media"><img src="resimler/tabak-klasik.webp" alt="Klasik Tabak Waffle" width="800" height="800" loading="lazy"></div>
+                    <div class="product-body">
+                        <h3>Klasik</h3>
+                        <p>Sütlü ve beyaz çikolata, fındık, fıstık.</p>
                     </div>
                 </article>
-
-                <article class="menu-card">
-                    <div class="card-image-wrapper">
-                        <img src="resimler/tabak-sutlu-cikolata.jpg" alt="Sütlü Çikolatalı Tabak Waffle" loading="lazy">
-                    </div>
-                    <div class="card-content">
-                        <div class="item-head">
-                            <h3 class="item-title">Sütlü Çikolatalı Tabak Waffle</h3>
-                            <span class="item-price">270 ₺</span>
-                        </div>
-                        <p class="item-desc">Çıtır Belçika waffle, muz, çilek, sütlü çikolata, fındık ve fıstık ile servis edilir.</p>
+                <article class="product">
+                    <div class="product-media"><img src="resimler/tabak-sutlu-cikolata.webp" alt="Sütlü Çikolatalı Tabak Waffle" width="800" height="800" loading="lazy"></div>
+                    <div class="product-body">
+                        <h3>Sütlü Çikolatalı</h3>
+                        <p>Sütlü çikolata, fındık, fıstık.</p>
                     </div>
                 </article>
-
-                <article class="menu-card">
-                    <div class="card-image-wrapper">
-                        <img src="resimler/tabak-karamel.jpg" alt="Karamelli Tabak Waffle" loading="lazy">
-                    </div>
-                    <div class="card-content">
-                        <div class="item-head">
-                            <h3 class="item-title">Karamelli Tabak Waffle</h3>
-                            <span class="item-price">270 ₺</span>
-                        </div>
-                        <p class="item-desc">Çıtır Belçika waffle, muz, çilek, sütlü çikolata, karamel çikolata ve fındık ile servis edilir.</p>
+                <article class="product">
+                    <div class="product-media"><img src="resimler/tabak-karamel.webp" alt="Karamelli Tabak Waffle" width="800" height="800" loading="lazy"></div>
+                    <div class="product-body">
+                        <h3>Karamelli</h3>
+                        <p>Sütlü çikolata, karamel çikolata, fındık.</p>
                     </div>
                 </article>
-
-                <article class="menu-card">
-                    <div class="card-image-wrapper">
-                        <img src="resimler/tabak-bitter.jpg" alt="Bitter Çikolatalı Tabak Waffle" loading="lazy">
-                    </div>
-                    <div class="card-content">
-                        <div class="item-head">
-                            <h3 class="item-title">Bitter Çikolatalı Tabak Waffle</h3>
-                            <span class="item-price">270 ₺</span>
-                        </div>
-                        <p class="item-desc">Çıtır Belçika waffle, muz, çilek, sütlü çikolata, bitter çikolata ve fındık ile servis edilir.</p>
+                <article class="product">
+                    <div class="product-media"><img src="resimler/tabak-bitter.webp" alt="Bitter Çikolatalı Tabak Waffle" width="800" height="800" loading="lazy"></div>
+                    <div class="product-body">
+                        <h3>Bitter Çikolatalı</h3>
+                        <p>Sütlü ve bitter çikolata, fındık.</p>
                     </div>
                 </article>
-
-                <article class="menu-card">
-                    <div class="card-image-wrapper">
-                        <img src="resimler/tabak-frambuaz.jpg" alt="Frambuazlı Tabak Waffle" loading="lazy">
-                    </div>
-                    <div class="card-content">
-                        <div class="item-head">
-                            <h3 class="item-title">Frambuazlı Tabak Waffle</h3>
-                            <span class="item-price">270 ₺</span>
-                        </div>
-                        <p class="item-desc">Çıtır Belçika waffle, muz, çilek, sütlü çikolata, frambuaz çikolata ve fındık ile servis edilir.</p>
+                <article class="product">
+                    <div class="product-media"><img src="resimler/tabak-frambuaz.webp" alt="Frambuazlı Tabak Waffle" width="800" height="800" loading="lazy"></div>
+                    <div class="product-body">
+                        <h3>Frambuazlı</h3>
+                        <p>Sütlü ve frambuaz çikolata, fındık.</p>
                     </div>
                 </article>
-
-                <article class="menu-card">
-                    <div class="card-image-wrapper">
-                        <img src="resimler/tabak-antep.jpg" alt="Antep Fıstıklı Tabak Waffle" loading="lazy">
-                    </div>
-                    <div class="card-content">
-                        <div class="item-head">
-                            <h3 class="item-title">Antep Fıstıklı Tabak Waffle</h3>
-                            <span class="item-price">350 ₺</span>
-                        </div>
-                        <p class="item-desc">Çıtır Belçika waffle, muz, çilek, sütlü çikolata, Antep fıstığı sosu, fındık ve fıstık ile servis edilir.</p>
+                <article class="product">
+                    <div class="product-media"><img src="resimler/tabak-antep.webp" alt="Antep Fıstıklı Tabak Waffle" width="800" height="800" loading="lazy"></div>
+                    <div class="product-body">
+                        <h3>Antep Fıstıklı</h3>
+                        <p>Sütlü çikolata, Antep fıstığı sosu, fındık, fıstık.</p>
                     </div>
                 </article>
-
-                <article class="menu-card">
-                    <div class="card-image-wrapper">
-                        <img src="resimler/tabak-double.jpg" alt="Double Tabak Waffle" loading="lazy">
-                    </div>
-                    <div class="card-content">
-                        <div class="item-head">
-                            <h3 class="item-title">Double Tabak Waffle</h3>
-                            <span class="item-price">300 ₺</span>
-                        </div>
-                        <p class="item-desc">Çıtır Belçika waffle, double muz, double çilek, sütlü çikolata, beyaz çikolata, fındık ve fıstık ile servis edilir.</p>
+                <article class="product">
+                    <div class="product-media"><img src="resimler/tabak-double.webp" alt="Double Tabak Waffle" width="800" height="800" loading="lazy"></div>
+                    <div class="product-body">
+                        <h3>Double</h3>
+                        <p>Çift muz, çift çilek; sütlü ve beyaz çikolata, fındık, fıstık.</p>
                     </div>
                 </article>
-
             </div>
         </section>
 
-        <!-- SECTION: KOVA WAFFLE -->
-        <section id="kova-waffle" class="menu-section">
-            <h2 class="section-title">Kova Waffle</h2>
-            <p class="section-subtitle">Kovada dilimlenmiş çıtır Belçika waffle</p>
-            <div class="section-divider"></div>
+        <!-- KOVA WAFFLE -->
+        <section id="kova" class="menu-section">
+            <div class="section-head">
+                <h2>Kova Waffle</h2>
+                <p>Dilimlenmiş Belçika waffle, kovada. Hepsi muz ve çilekle.</p>
+            </div>
 
-            <div class="menu-grid">
-
-                <article class="menu-card">
-                    <div class="card-image-wrapper">
-                        <img src="resimler/kova-klasik.jpg" alt="Klasik Kova Waffle" loading="lazy">
-                    </div>
-                    <div class="card-content">
-                        <div class="item-head">
-                            <h3 class="item-title">Klasik Kova Waffle</h3>
-                            <span class="item-price">250 ₺</span>
-                        </div>
-                        <p class="item-desc">Kovada: dilimlenmiş çıtır Belçika waffle, muz, çilek, sütlü çikolata, beyaz çikolata, fındık ve fıstık ile servis edilir.</p>
+            <div class="product-grid">
+                <article class="product">
+                    <div class="product-media"><img src="resimler/kova-klasik.webp" alt="Klasik Kova Waffle" width="800" height="800" loading="lazy"></div>
+                    <div class="product-body">
+                        <h3>Klasik</h3>
+                        <p>Sütlü ve beyaz çikolata, fındık, fıstık.</p>
                     </div>
                 </article>
-
-                <article class="menu-card">
-                    <div class="card-image-wrapper">
-                        <img src="resimler/kova-sutlu-cikolata.jpg" alt="Sütlü Çikolatalı Kova Waffle" loading="lazy">
-                    </div>
-                    <div class="card-content">
-                        <div class="item-head">
-                            <h3 class="item-title">Sütlü Çikolatalı Kova Waffle</h3>
-                            <span class="item-price">250 ₺</span>
-                        </div>
-                        <p class="item-desc">Kovada: dilimlenmiş çıtır Belçika waffle, muz, çilek, sütlü çikolata, fındık ve fıstık ile servis edilir.</p>
+                <article class="product">
+                    <div class="product-media"><img src="resimler/kova-sutlu-cikolata.webp" alt="Sütlü Çikolatalı Kova Waffle" width="800" height="800" loading="lazy"></div>
+                    <div class="product-body">
+                        <h3>Sütlü Çikolatalı</h3>
+                        <p>Sütlü çikolata, fındık, fıstık.</p>
                     </div>
                 </article>
-
-                <article class="menu-card">
-                    <div class="card-image-wrapper">
-                        <img src="resimler/kova-karamel.jpg" alt="Karamelli Kova Waffle" loading="lazy">
-                    </div>
-                    <div class="card-content">
-                        <div class="item-head">
-                            <h3 class="item-title">Karamelli Kova Waffle</h3>
-                            <span class="item-price">250 ₺</span>
-                        </div>
-                        <p class="item-desc">Kovada: dilimlenmiş çıtır Belçika waffle, muz, çilek, sütlü çikolata, karamel çikolata sosu ve fındık ile servis edilir.</p>
+                <article class="product">
+                    <div class="product-media"><img src="resimler/kova-karamel.webp" alt="Karamelli Kova Waffle" width="800" height="800" loading="lazy"></div>
+                    <div class="product-body">
+                        <h3>Karamelli</h3>
+                        <p>Sütlü çikolata, karamel sos, fındık.</p>
                     </div>
                 </article>
-
-                <article class="menu-card">
-                    <div class="card-image-wrapper">
-                        <img src="resimler/kova-bitter.jpg" alt="Bitter Çikolatalı Kova Waffle" loading="lazy">
-                    </div>
-                    <div class="card-content">
-                        <div class="item-head">
-                            <h3 class="item-title">Bitter Çikolatalı Kova Waffle</h3>
-                            <span class="item-price">250 ₺</span>
-                        </div>
-                        <p class="item-desc">Kovada: dilimlenmiş çıtır Belçika waffle, muz, çilek, bitter çikolata ve fındık ile servis edilir.</p>
+                <article class="product">
+                    <div class="product-media"><img src="resimler/kova-bitter.webp" alt="Bitter Çikolatalı Kova Waffle" width="800" height="800" loading="lazy"></div>
+                    <div class="product-body">
+                        <h3>Bitter Çikolatalı</h3>
+                        <p>Bitter çikolata, fındık.</p>
                     </div>
                 </article>
-
-                <article class="menu-card">
-                    <div class="card-image-wrapper">
-                        <img src="resimler/kova-frambuaz.jpg" alt="Frambuazlı Kova Waffle" loading="lazy">
-                    </div>
-                    <div class="card-content">
-                        <div class="item-head">
-                            <h3 class="item-title">Frambuazlı Kova Waffle</h3>
-                            <span class="item-price">250 ₺</span>
-                        </div>
-                        <p class="item-desc">Kovada: dilimlenmiş çıtır Belçika waffle, muz, çilek, sütlü çikolata, frambuaz, fındık ve fıstık ile servis edilir.</p>
+                <article class="product">
+                    <div class="product-media"><img src="resimler/kova-frambuaz.webp" alt="Frambuazlı Kova Waffle" width="800" height="800" loading="lazy"></div>
+                    <div class="product-body">
+                        <h3>Frambuazlı</h3>
+                        <p>Sütlü ve frambuaz çikolata, fındık, fıstık.</p>
                     </div>
                 </article>
-
-                <article class="menu-card">
-                    <div class="card-image-wrapper">
-                        <img src="resimler/kova-antep.jpg" alt="Antep Fıstıklı Kova Waffle" loading="lazy">
-                    </div>
-                    <div class="card-content">
-                        <div class="item-head">
-                            <h3 class="item-title">Antep Fıstıklı Kova Waffle</h3>
-                            <span class="item-price">350 ₺</span>
-                        </div>
-                        <p class="item-desc">Kovada: dilimlenmiş çıtır Belçika waffle, muz, çilek, sütlü çikolata, Antep fıstığı sosu, fındık ve fıstık ile servis edilir.</p>
+                <article class="product">
+                    <div class="product-media"><img src="resimler/kova-antep.webp" alt="Antep Fıstıklı Kova Waffle" width="800" height="800" loading="lazy"></div>
+                    <div class="product-body">
+                        <h3>Antep Fıstıklı</h3>
+                        <p>Sütlü çikolata, Antep fıstığı sosu, fındık, fıstık.</p>
                     </div>
                 </article>
-
-                <!-- Görsel gelince: placeholder div'i <img src="resimler/kova-double.jpg" ...> ile değiştir -->
-                <article class="menu-card">
-                    <div class="card-image-wrapper placeholder placeholder-kova" role="img" aria-label="Double Kova Waffle"></div>
-                    <div class="card-content">
-                        <div class="item-head">
-                            <h3 class="item-title">Double Kova Waffle</h3>
-                            <span class="item-price">300 ₺</span>
-                        </div>
-                        <p class="item-desc">Kovada: dilimlenmiş çıtır Belçika waffle, double muz, double çilek, sütlü çikolata, beyaz çikolata, fındık ve fıstık ile servis edilir.</p>
+                <article class="product">
+                    <div class="product-media"><img src="resimler/kova-double.webp" alt="Double Kova Waffle" width="800" height="800" loading="lazy"></div>
+                    <div class="product-body">
+                        <h3>Double</h3>
+                        <p>Çift muz, çift çilek; sütlü ve beyaz çikolata, fındık, fıstık.</p>
                     </div>
                 </article>
-
             </div>
         </section>
 
-        <!-- SECTION: BARDAK WAFFLE -->
-        <section id="bardak-waffle" class="menu-section">
-            <h2 class="section-title">Bardak Waffle <span class="badge-new">YENİ</span></h2>
-            <p class="section-subtitle">Bardakta dilimlenmiş çıtır waffle</p>
-            <div class="section-divider"></div>
+        <!-- BARDAK WAFFLE -->
+        <section id="bardak" class="menu-section">
+            <div class="section-head">
+                <p class="eyebrow eyebrow-new">Yeni</p>
+                <h2>Bardak Waffle</h2>
+                <p>Dilimlenmiş waffle, bardakta. Hepsi çilekle.</p>
+            </div>
 
-            <div class="menu-grid">
-
-                <!-- Bardak görselleri gelince: placeholder div'lerini <img src="resimler/bardak-....jpg" ...> ile değiştir -->
-                <article class="menu-card">
-                    <div class="card-image-wrapper placeholder placeholder-bardak" role="img" aria-label="Klasik Bardak Waffle"></div>
-                    <div class="card-content">
-                        <div class="item-head">
-                            <h3 class="item-title">Klasik Bardak Waffle</h3>
-                            <span class="item-price">150 ₺</span>
-                        </div>
-                        <p class="item-desc">Bardakta: dilimlenmiş çıtır waffle, muz, çilek, sütlü çikolata, beyaz çikolata, fındık ve fıstık ile servis edilir.</p>
+            <div class="product-grid">
+                <article class="product">
+                    <div class="product-media"><img src="resimler/bardak-klasik.webp" alt="Klasik Bardak Waffle" width="800" height="800" loading="lazy"></div>
+                    <div class="product-body">
+                        <h3>Klasik</h3>
+                        <p>Sütlü ve beyaz çikolata, fındık, fıstık.</p>
                     </div>
                 </article>
-
-                <article class="menu-card">
-                    <div class="card-image-wrapper placeholder placeholder-bardak" role="img" aria-label="Sütlü Çikolatalı Bardak Waffle"></div>
-                    <div class="card-content">
-                        <div class="item-head">
-                            <h3 class="item-title">Sütlü Çikolatalı Bardak Waffle</h3>
-                            <span class="item-price">150 ₺</span>
-                        </div>
-                        <p class="item-desc">Bardakta: dilimlenmiş çıtır waffle, muz, çilek, sütlü çikolata, fındık ve fıstık ile servis edilir.</p>
+                <article class="product">
+                    <div class="product-media"><img src="resimler/bardak-sutlu-cikolata.webp" alt="Sütlü Çikolatalı Bardak Waffle" width="800" height="800" loading="lazy"></div>
+                    <div class="product-body">
+                        <h3>Sütlü Çikolatalı</h3>
+                        <p>Sütlü çikolata, fındık, fıstık.</p>
                     </div>
                 </article>
-
-                <article class="menu-card">
-                    <div class="card-image-wrapper placeholder placeholder-bardak" role="img" aria-label="Karamelli Bardak Waffle"></div>
-                    <div class="card-content">
-                        <div class="item-head">
-                            <h3 class="item-title">Karamelli Bardak Waffle</h3>
-                            <span class="item-price">150 ₺</span>
-                        </div>
-                        <p class="item-desc">Bardakta: dilimlenmiş çıtır waffle, muz, çilek, sütlü çikolata, karamel çikolata ve fındık ile servis edilir.</p>
+                <article class="product">
+                    <div class="product-media"><img src="resimler/bardak-karamel.webp" alt="Karamelli Bardak Waffle" width="800" height="800" loading="lazy"></div>
+                    <div class="product-body">
+                        <h3>Karamelli</h3>
+                        <p>Sütlü çikolata, karamel sos, fındık.</p>
                     </div>
                 </article>
-
-                <article class="menu-card">
-                    <div class="card-image-wrapper placeholder placeholder-bardak" role="img" aria-label="Bitter Çikolatalı Bardak Waffle"></div>
-                    <div class="card-content">
-                        <div class="item-head">
-                            <h3 class="item-title">Bitter Çikolatalı Bardak Waffle</h3>
-                            <span class="item-price">150 ₺</span>
-                        </div>
-                        <p class="item-desc">Bardakta: dilimlenmiş çıtır waffle, muz, çilek, bitter çikolata ve fındık ile servis edilir.</p>
+                <article class="product">
+                    <div class="product-media"><img src="resimler/bardak-bitter.webp" alt="Bitter Çikolatalı Bardak Waffle" width="800" height="800" loading="lazy"></div>
+                    <div class="product-body">
+                        <h3>Bitter Çikolatalı</h3>
+                        <p>Bitter çikolata, fındık.</p>
                     </div>
                 </article>
-
-                <article class="menu-card">
-                    <div class="card-image-wrapper placeholder placeholder-bardak" role="img" aria-label="Frambuazlı Bardak Waffle"></div>
-                    <div class="card-content">
-                        <div class="item-head">
-                            <h3 class="item-title">Frambuazlı Bardak Waffle</h3>
-                            <span class="item-price">150 ₺</span>
-                        </div>
-                        <p class="item-desc">Bardakta: dilimlenmiş çıtır waffle, muz, çilek, sütlü çikolata, frambuaz çikolata ve fındık ile servis edilir.</p>
+                <article class="product">
+                    <div class="product-media"><img src="resimler/bardak-frambuaz.webp" alt="Frambuazlı Bardak Waffle" width="800" height="800" loading="lazy"></div>
+                    <div class="product-body">
+                        <h3>Frambuazlı</h3>
+                        <p>Sütlü ve frambuaz çikolata, fındık.</p>
                     </div>
                 </article>
-
-                <article class="menu-card">
-                    <div class="card-image-wrapper placeholder placeholder-bardak" role="img" aria-label="Antep Fıstıklı Bardak Waffle"></div>
-                    <div class="card-content">
-                        <div class="item-head">
-                            <h3 class="item-title">Antep Fıstıklı Bardak Waffle</h3>
-                            <span class="item-price">200 ₺</span>
-                        </div>
-                        <p class="item-desc">Bardakta: dilimlenmiş çıtır waffle, muz, çilek, sütlü çikolata, Antep fıstığı sosu, fındık ve fıstık ile servis edilir.</p>
+                <article class="product">
+                    <div class="product-media"><img src="resimler/bardak-antep.webp" alt="Antep Fıstıklı Bardak Waffle" width="800" height="800" loading="lazy"></div>
+                    <div class="product-body">
+                        <h3>Antep Fıstıklı</h3>
+                        <p>Sütlü çikolata, Antep fıstığı sosu, fıstık, fındık.</p>
                     </div>
                 </article>
-
             </div>
         </section>
 
-        <!-- SECTION: İÇECEKLER -->
+        <!-- İÇECEKLER -->
         <section id="icecekler" class="menu-section">
-            <h2 class="section-title">İçecekler</h2>
-            <div class="section-divider"></div>
+            <div class="section-head">
+                <h2>İçecekler</h2>
+            </div>
 
-            <ul class="drinks-list">
-                <li><span class="drink-name">Çay</span><span class="drink-leader"></span><span class="item-price">30 ₺</span></li>
-                <li><span class="drink-name">Kutu İçecekler</span><span class="drink-leader"></span><span class="item-price">60 ₺</span></li>
-                <li><span class="drink-name">Soda</span><span class="drink-leader"></span><span class="item-price">30 ₺</span></li>
-                <li><span class="drink-name">Su</span><span class="drink-leader"></span><span class="item-price">20 ₺</span></li>
+            <ul class="drinks">
+                <li>Çay</li>
+                <li>Kutu içecekler</li>
+                <li>Soda</li>
+                <li>Su</li>
             </ul>
         </section>
 
     </main>
 
-    <!-- Footer -->
     <footer class="site-footer">
-        <div class="footer-qr">
-            <img src="resimler/qrcode.png" alt="Dijital Menü QR Kodu" loading="lazy">
-            <p>Tüm Menü İçin Okutun</p>
-        </div>
-        <p>&copy; 2026 Waffle Champion. Tüm hakları saklıdır.</p>
+        <img class="footer-qr" src="resimler/qrcode.png" alt="Dijital menü QR kodu" width="96" height="96" loading="lazy">
+        <p class="footer-qr-text">Tüm menü için okutun</p>
+        <p class="footer-legal">&copy; 2026 Waffle Champion. Tüm hakları saklıdır.</p>
     </footer>
 
-    <!-- Animations Script -->
     <script>
-        // Smooth reveal animation for cards
-        document.addEventListener("DOMContentLoaded", () => {
-            const observerOptions = {
-                root: null,
-                rootMargin: '0px',
-                threshold: 0.1
-            };
+        // Kaydırırken bulunulan bölümü menüde işaretle (Apple tarzı segment kontrol)
+        (() => {
+            const links = [...document.querySelectorAll('.segmented a')];
+            const byId = new Map(links.map(a => [a.getAttribute('href').slice(1), a]));
+            const setActive = (id) => links.forEach(a => a.classList.toggle('is-active', a === byId.get(id)));
+            setActive('tabak');
+            const spy = new IntersectionObserver((entries) => {
+                entries.forEach(e => { if (e.isIntersecting) setActive(e.target.id); });
+            }, { rootMargin: '-45% 0px -50% 0px' });
+            byId.forEach((_, id) => { const s = document.getElementById(id); if (s) spy.observe(s); });
 
-            const observer = new IntersectionObserver((entries, observer) => {
-                entries.forEach((entry) => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('reveal-active');
-                        observer.unobserve(entry.target);
-                    }
+            // Kartlar ekrana girerken hafifçe belirsin
+            if (!matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                const reveal = new IntersectionObserver((entries) => {
+                    entries.forEach(e => {
+                        if (e.isIntersecting) { e.target.classList.add('is-visible'); reveal.unobserve(e.target); }
+                    });
+                }, { rootMargin: '0px 0px -8% 0px' });
+                document.querySelectorAll('.product, .drinks').forEach(el => {
+                    el.classList.add('reveal');
+                    reveal.observe(el);
                 });
-            }, observerOptions);
-
-            const cards = document.querySelectorAll('.menu-card, .drinks-list');
-            cards.forEach(card => {
-                card.classList.add('reveal-init');
-                observer.observe(card);
-            });
-        });
+            }
+        })();
     </script>
 </body>
 </html>
